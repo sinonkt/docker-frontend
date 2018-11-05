@@ -6,8 +6,8 @@ ENV EASYBUILD_PREFIX=${MODULES_DIR}
 ENV MODULEPATH=${MODULES_DIR}/modules/all:$MODULEPATH
 
 # Install slurm, slurm-perlapi
-RUN rpm -ivh ${ROOT_RPMS}/slurm-${SLURM_VERSION}.el7.x86_64.rpm \
-  ${ROOT_RPMS}/slurm-perlapi-${SLURM_VERSION}.el7.x86_64.rpm && \
+RUN rpm -ivh ${ROOT_RPMS}/slurm-${SLURM_VERSION}-1.el7.x86_64.rpm \
+  ${ROOT_RPMS}/slurm-perlapi-${SLURM_VERSION}-1.el7.x86_64.rpm && \
   rm -rf ${ROOT_RPMS}/*
 
 # Switch to user `modules` to install EasyBuild
