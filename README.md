@@ -1,1 +1,1 @@
-# docker-slurm-frontend
+# docker-slurmfe (frontend)
